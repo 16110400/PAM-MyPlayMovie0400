@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">내 영화 등록</string>
+    <string name="app_submenu1">내 영화 등록</string>
+    <string name="app_submenu2">설정</string>
+    <string name="app_btnInfo">더 많은 정보</string>
+</resources>

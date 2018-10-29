@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyPlayMovie</string>
+    <string name="app_submenu1">Featured Movie</string>
+    <string name="app_submenu2">Settings</string>
+    <string name="app_btnInfo">More Info</string>
+
+
+</resources>
