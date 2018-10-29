@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         moView = (RecyclerView)findViewById(R.id.movieView);
         moView.setLayoutManager(new GridLayoutManager(MainActivity.this, 1));
 
-        movieLoad("top_rated");
+        movieLoad("popular");
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.popular){
-            movieLoad("top_rated");
+            movieLoad("popular");
         }else if (id ==R.id.setting){
             Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
             startActivity(intent);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void movieLoad(String value){
         TampilanAPI api = Client.getRetrofit().create(TampilanAPI.class);
-        Call<Example> call= api.getRated();
+        Call<Example> call= api.getPopular();
 //        if (value.equals("popular")){
 //            call = api.getPopular();
 //        }else if (value.equals("top_rated")){

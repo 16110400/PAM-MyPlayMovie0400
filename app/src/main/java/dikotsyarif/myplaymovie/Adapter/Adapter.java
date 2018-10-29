@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,6 +16,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import dikotsyarif.myplaymovie.AmbilData.Result;
+import dikotsyarif.myplaymovie.MainActivity;
 import dikotsyarif.myplaymovie.MovieDetail;
 import dikotsyarif.myplaymovie.R;
 
@@ -61,6 +63,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MovieList> {
                 holder.itemView.getContext().startActivity(detail);
             }
         });
+
     }
 
 

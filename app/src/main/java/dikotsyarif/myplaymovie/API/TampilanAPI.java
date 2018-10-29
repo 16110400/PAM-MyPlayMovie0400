@@ -15,10 +15,10 @@ public interface TampilanAPI {
 //    @GET("popular?api_key="+DB_API)
 //    Call<Dates>getDates();
 
-//    @GET("popular?api_key="+DB_API)
-//    Call<Example>getPopular();
+    @GET("popular?api_key="+DB_API)
+    Call<Example>getPopular();
 
-    @GET("top_rated?api_key="+DB_API)
-    Call<Example>getRated();
+    //@GET("top_rated?api_key="+DB_API)
+    //Call<Example>getRated();
 
 }
